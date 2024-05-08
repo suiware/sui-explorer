@@ -297,7 +297,7 @@ export function PageLayout({ gradient, content, loading, isError }: PageLayoutPr
 					</section>
 				)}
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }
