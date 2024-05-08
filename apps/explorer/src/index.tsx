@@ -22,7 +22,7 @@ import './index.css';
 initAmplitude();
 
 // Start loading features as early as we can:
-growthbook.loadFeatures();
+// growthbook.loadFeatures();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
