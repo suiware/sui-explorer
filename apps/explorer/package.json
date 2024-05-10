@@ -1,5 +1,5 @@
 {
-  "name": "sui-explorer",
+  "name": "explorer",
   "private": true,
   "scripts": {
     "dev": "vite --port 3000",
@@ -8,6 +8,7 @@
     "typecheck": "tsc -b",
     "playwright": "playwright",
     "build": "pnpm typecheck && vite build",
+    "serve": "pnpm dlx serve -s ./build",
     "eslint:check": "eslint --max-warnings=0 \"./src/**/*.{js,jsx,ts,tsx}\"",
     "eslint:fix": "pnpm eslint:check --fix",
     "prettier:check": "prettier -c --ignore-unknown .",
