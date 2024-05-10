@@ -1,4 +1,11 @@
-> [!IMPORTANT]
-> This repo contains the original source code for the Sui Explorer, which has been sunset. This is only for reference.
+# Local Sui Explorer
 
-# sui-explorer
+a fork of [sui-explorer](https://github.com/MystenLabs/sui-explorer), originally developed by MystenLabs and now discontinued.
+
+The purpose of this fork is to provide Sui Explorer for the local net for easier contract development.
+
+## License and copyright
+
+&copy; MystenLabs, Apache-2.0
+
+All [changes](./CHANGELOG.md) after Apr 10, 2024 are subject to copyright of [Konstantin Komelin](https://github.com/kkomelin) and other [contributors](https://github.com/kkomelin/sui-explorer/graphs/contributors).
