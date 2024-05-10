@@ -1,7 +1,7 @@
 {
   "name": "sui-explorer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Local Sui Explorer",
   "main": "index.js",
   "scripts": {
     "build": "pnpm --filter explorer build",
