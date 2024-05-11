@@ -23,13 +23,9 @@
     "pull-amplitude": "ampli pull web && node prependLicense.mjs && prettier -w ampli.json src/utils/analytics/ampli/index.ts"
   },
   "dependencies": {
-    "@amplitude/analytics-browser": "^1.10.3",
-    "@amplitude/analytics-types": "^0.20.0",
     "@floating-ui/react": "^0.23.0",
     "@fontsource-variable/inter": "^5.0.5",
     "@fontsource-variable/red-hat-mono": "^5.0.6",
-    "@growthbook/growthbook": "^0.25.0",
-    "@growthbook/growthbook-react": "^0.15.0",
     "@headlessui/react": "^1.7.15",
     "@mysten/core": "workspace:*",
     "@mysten/dapp-kit": "^0.12.9",
@@ -42,7 +38,6 @@
     "@radix-ui/react-popover": "^1.0.6",
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
-    "@sentry/react": "^7.59.2",
     "@tanstack/react-query": "^5.0.0",
     "@tanstack/react-query-devtools": "^5.0.1",
     "@tanstack/react-table": "^8.9.3",
@@ -80,7 +75,6 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@amplitude/ampli": "^1.31.5",
     "@babel/core": "^7.22.9",
     "@playwright/test": "^1.36.1",
     "@storybook/addon-a11y": "^7.1.0",

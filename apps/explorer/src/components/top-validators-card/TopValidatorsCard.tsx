@@ -7,15 +7,14 @@ import { type SuiValidatorSummary } from '@mysten/sui.js/client';
 import { Text } from '@mysten/ui';
 import { useMemo } from 'react';
 
-import { StakeColumn } from './StakeColumn';
-import { HighlightedTableCol } from '~/components/Table/HighlightedTableCol';
-import { Banner } from '~/ui/Banner';
-import { ImageIcon } from '~/ui/ImageIcon';
-import { AddressLink, ValidatorLink } from '~/ui/InternalLink';
-import { Link } from '~/ui/Link';
-import { PlaceholderTable } from '~/ui/PlaceholderTable';
-import { TableCard } from '~/ui/TableCard';
-import { ampli } from '~/utils/analytics/ampli';
+import { HighlightedTableCol } from "~/components/Table/HighlightedTableCol";
+import { Banner } from "~/ui/Banner";
+import { ImageIcon } from "~/ui/ImageIcon";
+import { AddressLink, ValidatorLink } from "~/ui/InternalLink";
+import { Link } from "~/ui/Link";
+import { PlaceholderTable } from "~/ui/PlaceholderTable";
+import { TableCard } from "~/ui/TableCard";
+import { StakeColumn } from "./StakeColumn";
 
 const NUMBER_OF_VALIDATORS = 10;
 
@@ -40,63 +39,51 @@ const validatorsTable = (
 	const validatorsItems = limit ? validators.splice(0, limit) : validators;
 
 	return {
-		data: validatorsItems.map(({ name, stake, address, logo }) => ({
-			name: (
-				<HighlightedTableCol first>
-					<div className="flex items-center gap-2.5">
-						{showIcon && <ImageIcon src={logo} size="sm" fallback={name} label={name} circle />}
+    data: validatorsItems.map(({ name, stake, address, logo }) => ({
+      name: (
+        <HighlightedTableCol first>
+          <div className="flex items-center gap-2.5">
+            {showIcon && (
+              <ImageIcon
+                src={logo}
+                size="sm"
+                fallback={name}
+                label={name}
+                circle
+              />
+            )}
 
-						<ValidatorLink
-							address={address}
-							label={name}
-							onClick={() =>
-								ampli.clickedValidatorRow({
-									sourceFlow: 'Top validators - validator name',
-									validatorAddress: address,
-									validatorName: name,
-								})
-							}
-						/>
-					</div>
-				</HighlightedTableCol>
-			),
-			stake: <StakeColumn stake={stake} />,
-			delegation: (
-				<Text variant="bodySmall/medium" color="steel-darker">
-					{stake.toString()}
-				</Text>
-			),
-			address: (
-				<HighlightedTableCol>
-					<AddressLink
-						address={address}
-						noTruncate={!limit}
-						onClick={() =>
-							ampli.clickedValidatorRow({
-								sourceFlow: 'Top validators - validator address',
-								validatorAddress: address,
-								validatorName: name,
-							})
-						}
-					/>
-				</HighlightedTableCol>
-			),
-		})),
-		columns: [
-			{
-				header: 'Name',
-				accessorKey: 'name',
-			},
-			{
-				header: 'Address',
-				accessorKey: 'address',
-			},
-			{
-				header: 'Stake',
-				accessorKey: 'stake',
-			},
-		],
-	};
+            <ValidatorLink address={address} label={name} />
+          </div>
+        </HighlightedTableCol>
+      ),
+      stake: <StakeColumn stake={stake} />,
+      delegation: (
+        <Text variant="bodySmall/medium" color="steel-darker">
+          {stake.toString()}
+        </Text>
+      ),
+      address: (
+        <HighlightedTableCol>
+          <AddressLink address={address} noTruncate={!limit} />
+        </HighlightedTableCol>
+      ),
+    })),
+    columns: [
+      {
+        header: "Name",
+        accessorKey: "name",
+      },
+      {
+        header: "Address",
+        accessorKey: "address",
+      },
+      {
+        header: "Stake",
+        accessorKey: "stake",
+      },
+    ],
+  };
 };
 
 type TopValidatorsCardProps = {

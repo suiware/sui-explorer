@@ -1,11 +1,11 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
+import { useMemo } from "react";
 import { matchRoutes, useLocation, useParams } from 'react-router-dom';
 import { useNetworkContext } from '~/context';
-import { Network } from '~/utils/api/DefaultRpcClient';
-import { useMemo } from 'react';
-import { useGetObject } from '../../../core';
-import { translate } from '~/pages/object-result/ObjectResultType';
+import { translate } from "~/pages/object-result/ObjectResultType";
+import { Network } from "~/utils/api/DefaultRpcClient";
+import { useGetObject } from "../../../core";
 
 const SUISCAN_URL_MAINNET = 'https://suiscan.xyz';
 const SUISCAN_URL_TESTNET = 'https://suiscan.xyz/testnet';

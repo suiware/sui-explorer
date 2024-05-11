@@ -5,17 +5,16 @@ import * as TabsPrimitive from '@radix-ui/react-tabs';
 import { cva, type VariantProps } from 'class-variance-authority';
 import clsx from 'clsx';
 import {
-	type ComponentPropsWithoutRef,
-	type ElementRef,
-	forwardRef,
-	createContext,
-	useContext,
-	type ReactNode,
-} from 'react';
+  createContext,
+  forwardRef,
+  useContext,
+  type ComponentPropsWithoutRef,
+  type ElementRef,
+  type ReactNode,
+} from "react";
 
 import { Tooltip } from './Tooltip';
-import { ReactComponent as InfoSvg } from './icons/info_10x10.svg';
-import { ampli } from '~/utils/analytics/ampli';
+import { ReactComponent as InfoSvg } from "./icons/info_10x10.svg";
 
 type TabSize = 'md' | 'lg' | 'sm';
 
@@ -106,7 +105,7 @@ const TabsContent = forwardRef<
 	/>
 ));
 
-export { Tabs, TabsList, TabsTrigger, TabsContent };
+export { Tabs, TabsContent, TabsList, TabsTrigger };
 
 /**
  * A special single-tab header that automatically creates the correct components and state.
@@ -127,25 +126,20 @@ export function TabHeader({
 	tooltip?: string;
 }) {
 	return (
-		<Tabs size={size} defaultValue="tab">
-			<TabsList>
-				<TabsTrigger value="tab">
-					{title}
-					{tooltip && (
-						<Tooltip
-							tip={tooltip}
-							onOpen={() => {
-								ampli.activatedTooltip({ tooltipLabel: title });
-							}}
-						>
-							<InfoSvg />
-						</Tooltip>
-					)}
-				</TabsTrigger>
-			</TabsList>
-			<TabsContent value="tab" noGap={noGap}>
-				{children}
-			</TabsContent>
-		</Tabs>
-	);
+    <Tabs size={size} defaultValue="tab">
+      <TabsList>
+        <TabsTrigger value="tab">
+          {title}
+          {tooltip && (
+            <Tooltip tip={tooltip}>
+              <InfoSvg />
+            </Tooltip>
+          )}
+        </TabsTrigger>
+      </TabsList>
+      <TabsContent value="tab" noGap={noGap}>
+        {children}
+      </TabsContent>
+    </Tabs>
+  );
 }
