@@ -391,9 +391,6 @@ importers:
       '@storybook/react-vite':
         specifier: ^7.1.0
         version: 7.6.17(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(rollup@4.14.0)(typescript@5.4.3)(vite@5.2.8(@types/node@20.12.3))
-      '@storybook/testing-library':
-        specifier: ^0.2.0
-        version: 0.2.2
       '@types/react':
         specifier: ^18.2.15
         version: 18.2.74
@@ -2569,9 +2566,6 @@ packages:
 
   '@storybook/telemetry@7.6.17':
     resolution: {integrity: sha512-WOcOAmmengYnGInH98Px44F47DSpLyk20BM+Z/IIQDzfttGOLlxNqBBG1XTEhNRn+AYuk4aZ2JEed2lCjVIxcA==}
-
-  '@storybook/testing-library@0.2.2':
-    resolution: {integrity: sha512-L8sXFJUHmrlyU2BsWWZGuAjv39Jl1uAqUHdxmN42JY15M4+XCMjGlArdCCjDe1wpTSW6USYISA9axjZojgtvnw==}
 
   '@storybook/theming@7.6.17':
     resolution: {integrity: sha512-ZbaBt3KAbmBtfjNqgMY7wPMBshhSJlhodyMNQypv+95xLD/R+Az6aBYbpVAOygLaUQaQk4ar7H/Ww6lFIoiFbA==}
@@ -8985,12 +8979,6 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
-
-  '@storybook/testing-library@0.2.2':
-    dependencies:
-      '@testing-library/dom': 9.3.4
-      '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.4)
-      ts-dedent: 2.2.0
 
   '@storybook/theming@7.6.17(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:

@@ -48,7 +48,6 @@
 		"@storybook/blocks": "^7.1.0",
 		"@storybook/react": "^7.1.0",
 		"@storybook/react-vite": "^7.1.0",
-		"@storybook/testing-library": "^0.2.0",
 		"@types/react": "^18.2.15",
 		"prop-types": "^15.8.1",
 		"storybook": "^7.1.0",
