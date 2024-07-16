@@ -1,11 +1,8 @@
 // Copyright (c) Mysten Labs, Inc.
 // SPDX-License-Identifier: Apache-2.0
 
-import { useFeatureIsOn } from '@growthbook/growthbook-react';
 import { useSuiClient } from '@mysten/dapp-kit';
 import { useQuery } from '@tanstack/react-query';
-
-const SUI_NS_FEATURE_FLAG = 'suins';
 
 // This should align with whatever names we want to be able to resolve.
 const SUI_NS_DOMAINS = ['.sui'];
@@ -14,7 +11,7 @@ export function isSuiNSName(name: string) {
 }
 
 export function useSuiNSEnabled() {
-	return useFeatureIsOn(SUI_NS_FEATURE_FLAG);
+	return true;
 }
 
 export function useResolveSuiNSAddress(name?: string | null, enabled?: boolean) {
