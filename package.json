@@ -5,9 +5,7 @@
   "main": "apps/explorer/build/index.html",
   "scripts": {
     "build": "pnpm --filter explorer build",
-    "serve": "pnpm --filter explorer serve",
-    "prepublish": "pnpm build",
-    "prepare": "husky || true"
+    "serve": "pnpm --filter explorer serve"
   },
   "keywords": [],
   "author": "",
