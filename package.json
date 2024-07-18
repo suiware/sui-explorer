@@ -1,13 +1,18 @@
 {
   "name": "sui-explorer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Local Sui Explorer",
-  "main": "index.js",
+  "main": "apps/explorer/build/index.html",
   "scripts": {
     "build": "pnpm --filter explorer build",
-    "serve": "pnpm --filter explorer serve"
+    "serve": "pnpm --filter explorer serve",
+    "prepublish": "pnpm build",
+    "prepare": "husky || true"
   },
   "keywords": [],
   "author": "",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "husky": "^9.1.1"
+  }
 }
