@@ -8,7 +8,7 @@ The purpose of this fork is to provide Sui Explorer for the local net.
 
 - Tailored to the localnet
 - No third-party trackers
-- [Single file](/apps/explorer/build/index.html) build
+- [Single file](/apps/explorer/build/) build
 
 ## How to Use
 
