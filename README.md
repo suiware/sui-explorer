@@ -2,7 +2,7 @@
 
 A fork of [sui-explorer](https://github.com/MystenLabs/sui-explorer), originally developed by MystenLabs and now discontinued.
 
-The purpose of this fork is to provide Sui Explorer for the local net for easier contract development.
+The purpose of this fork is to provide Sui Explorer for the local net.
 
 ## License and copyright
 
