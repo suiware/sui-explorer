@@ -18,4 +18,4 @@ The simplest way to use it is through [Local Sui Explorer: Cli](https://github.c
 
 &copy; MystenLabs, Apache-2.0
 
-All [changes](./CHANGELOG.md) after Apr 10, 2024 are subject to copyright of [Konstantin Komelin](https://github.com/kkomelin) and other involved [contributors](https://github.com/kkomelin/sui-explorer/graphs/contributors).
+All [changes](./CHANGELOG.md) after Apr 10, 2024 are a subject of copyright of [Konstantin Komelin](https://github.com/kkomelin) and other involved [contributors](https://github.com/kkomelin/sui-explorer/graphs/contributors).
