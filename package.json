@@ -12,5 +12,8 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "husky": "^9.1.1"
+  },
+  "lint-staged": {
+    "apps/*": "pnpm build"
   }
 }
