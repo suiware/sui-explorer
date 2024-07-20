@@ -11,7 +11,7 @@ The purpose of this fork is to provide Sui Explorer for the local net.
 
 ## How to Use
 
-The simplest way to use it is through [Local Sui Explorer: Cli](https://github.com/kkomelin/sui-explorer-local) - 
+The simplest way to use it is through [Local Sui Explorer: Cli](https://github.com/kkomelin/sui-explorer-local)
 
 ## License & Copyright
 
