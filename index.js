@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
 import chalk from "chalk";
-import { execSync } from "child_process";
 import { Command } from "commander";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import pm2 from "pm2";
 import { fileURLToPath } from "url";
 
+// @todo Read project name and new-issue url from package.json.
 const APP_NAME = "Local Sui Explorer";
 const APP_URL = "http://localhost:9001";
 const REPORT_ISSUE_URL = "https://github.com/kkomelin/sui-explorer/issues/new";
@@ -51,7 +51,6 @@ const main = async () => {
               _displayErrorMessage(`Could not start ${APP_NAME}`);
               options.verbose && console.error(err);
               process.exit(1);
-              // throw err;
             }
           }
         );
@@ -76,7 +75,6 @@ const main = async () => {
           pm2.disconnect();
 
           if (err) {
-            // throw err;
             _displayErrorMessage(`Could not stop ${APP_NAME}`);
             options.verbose && console.error(err);
             process.exit(1);
@@ -112,15 +110,6 @@ const main = async () => {
       });
 
       _displaySuccessMessage(`${APP_NAME} restarted on ${APP_URL}`);
-    });
-
-  program
-    .command("logs")
-    .description(`Display logs for ${APP_NAME}`)
-    .action((options) => {
-      execSync(`npx pm2 logs sui-explorer-local --nostream`, {
-        stdio: "inherit",
-      });
     });
 
   program.parse();

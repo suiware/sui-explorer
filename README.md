@@ -2,9 +2,9 @@
 
 Sui Explorer for your localnet.
 
-_A fork of [sui-explorer](https://github.com/MystenLabs/sui-explorer), originally developed by MystenLabs and now discontinued._
-
 ![Sui Explorer for Localnet: Screenshot](https://repository-images.githubusercontent.com/797627100/052271ab-2ee5-4560-8c24-bda45edb608c)
+
+_A fork of [sui-explorer](https://github.com/MystenLabs/sui-explorer), originally developed by MystenLabs and now discontinued._
 
 ## Requirements
 
@@ -41,10 +41,10 @@ sui-explorer-local restart
 
 ## Troubleshot
 
-To display logs, run this command:
+To display logs for the PM2 process manager, which powers the app, run this command:
 
 ```bash
-sui-explorer-local logs
+npx pm2 logs sui-explorer-local --nostream
 ```
 
 ## Usage examples
