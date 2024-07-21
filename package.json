@@ -1,16 +1,41 @@
 {
-  "name": "sui-explorer",
-  "version": "2.0.0",
+  "name": "sui-explorer-local",
+  "version": "2.0.0-alpha5",
   "description": "Local Sui Explorer",
-  "main": "apps/explorer/build/index.html",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "sui-explorer-local": "./index.js"
+  },
   "scripts": {
     "build": "pnpm --filter explorer build",
     "serve": "pnpm --filter explorer serve"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "sui",
+    "sui-explorer",
+    "sui-explorer-local",
+    "localnet"
+  ],
   "author": "",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkomelin/sui-explorer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kkomelin/sui-explorer/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "pm2": "^5.4.2"
+  },
   "devDependencies": {
     "husky": "^9.1.1"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
