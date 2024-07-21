@@ -1,6 +1,6 @@
 {
   "name": "sui-explorer-local",
-  "version": "2.0.0-alpha5",
+  "version": "2.0.0",
   "description": "Local Sui Explorer",
   "main": "index.js",
   "type": "module",
