@@ -39,7 +39,10 @@ const main = async () => {
             name: "sui-explorer-local",
             script: "serve",
             env: {
-              PM2_SERVE_PATH: "./apps/explorer/build/",
+              PM2_SERVE_PATH: path.join(
+                _getCliDirectory(),
+                "/apps/explorer/build/"
+              ),
               PM2_SERVE_PORT: 9001,
               PM2_SERVE_SPA: "true",
             },
