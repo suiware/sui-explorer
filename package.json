@@ -16,16 +16,17 @@
     "sui",
     "sui-explorer",
     "sui-explorer-local",
-    "localnet"
+    "localnet",
+    "suiware"
   ],
   "author": "",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kkomelin/sui-explorer.git"
+    "url": "https://github.com/suiware/sui-explorer.git"
   },
   "bugs": {
-    "url": "https://github.com/kkomelin/sui-explorer/issues"
+    "url": "https://github.com/suiware/sui-explorer/issues"
   },
   "dependencies": {
     "chalk": "^5.3.0",

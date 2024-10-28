@@ -49,10 +49,10 @@ npx pm2 logs sui-explorer-local --nostream
 
 ## Usage examples
 
-Sui Explorer Local is integrated into [Sui dApp Starter](https://github.com/kkomelin/sui-dapp-starter) and [Suibase](https://github.com/ChainMovers/suibase).
+Sui Explorer Local is integrated into [Sui dApp Starter](https://github.com/suiware/sui-dapp-starter) and [Suibase](https://github.com/ChainMovers/suibase).
 
 ## License & copyright
 
 Original version of [Sui Explorer](https://github.com/MystenLabs/sui-explorer) - &copy; [MystenLabs](https://github.com/MystenLabs), Apache-2.0
 
-All [changes](./CHANGELOG.md) after Apr 10, 2024 are a subject of copyright of [Konstantin Komelin](https://github.com/kkomelin) and other involved [contributors](https://github.com/kkomelin/sui-explorer/graphs/contributors).
+All [changes](./CHANGELOG.md) after Apr 10, 2024 are a subject of copyright of [Konstantin Komelin](https://github.com/kkomelin) and other involved [contributors](https://github.com/suiware/sui-explorer/graphs/contributors).
