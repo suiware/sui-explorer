@@ -3,9 +3,9 @@
 
 import { Text } from '@mysten/ui';
 
-import { LegalLinks, LegalText } from './Legal';
-import { footerLinks, socialLinks } from './footerLinks';
-import { ReactComponent as MystenLabsRed } from '../../assets/MystenLabs_Red.svg';
+// import { LegalLinks, LegalText } from './Legal';
+import { footerLinks, footerLogoLink, socialLinks } from './footerLinks';
+// import { ReactComponent as MystenLabsRed } from '../../assets/MystenLabs_Red.svg';
 import { Link } from '~/ui/Link';
 
 function FooterLinks() {
@@ -36,28 +36,60 @@ function FooterLinks() {
 	);
 }
 
+const SuiwareLogoLink = () => {
+  return (
+    <div className="flex items-center gap-1">
+      <Text variant="body/normal" color="steel-darker">
+        Maintained by
+      </Text>{" "}
+      <Link variant="text" href={footerLogoLink.href}>
+        <Text variant="body/semibold" color="steel-darker">
+          {footerLogoLink.title}
+        </Text>
+      </Link>
+    </div>
+  );
+};
+
 function Footer() {
-	return (
-		<footer className="sticky top-[100%] bg-gray-40 px-5 py-10 md:px-10 md:py-14">
-			<nav className="flex flex-col justify-center gap-4 divide-y divide-solid divide-gray-45 md:gap-7.5">
-				<div className="flex flex-col-reverse items-center gap-7.5 md:flex-row md:justify-between ">
-					<div className="hidden self-center text-hero-dark md:flex md:self-start">
-						<MystenLabsRed />
-					</div>
-					<div>
-						<FooterLinks />
-					</div>
-				</div>
-				<div className="flex flex-col-reverse justify-center gap-3 pt-3 md:flex-row md:justify-between">
-					<LegalText />
-					<LegalLinks />
-				</div>
-			</nav>
-			<div className="mt-4 flex justify-center border-t border-solid border-gray-45 pt-5 text-hero-dark md:hidden md:self-start">
-				<MystenLabsRed />
-			</div>
-		</footer>
-	);
+  return (
+    <footer className="sticky top-[100%] bg-gray-40 px-2 py-10 md:px-5 md:py-14">
+      <nav className="flex flex-col justify-center gap-4 divide-y divide-solid divide-gray-45 md:gap-7.5">
+        <div className="flex flex-col-reverse items-center gap-7.5 md:flex-row md:justify-between ">
+          <div className="hidden self-center text-hero-dark md:flex">
+            <div className="flex items-center gap-1">
+              <SuiwareLogoLink />
+            </div>
+          </div>
+          <div>
+            <FooterLinks />
+          </div>
+        </div>
+      </nav>
+      <div className="mt-4 flex justify-center border-t border-solid border-gray-45 pt-5 text-hero-dark md:hidden md:self-start">
+        <SuiwareLogoLink />
+      </div>
+    </footer>
+    // <footer className="sticky top-[100%] bg-gray-40 px-5 py-10 md:px-10 md:py-14">
+    // 	<nav className="flex flex-col justify-center gap-4 divide-y divide-solid divide-gray-45 md:gap-7.5">
+    // 		<div className="flex flex-col-reverse items-center gap-7.5 md:flex-row md:justify-between ">
+    // 			<div className="hidden self-center text-hero-dark md:flex md:self-start">
+    // 				<MystenLabsRed />
+    // 			</div>
+    // 			<div>
+    // 				<FooterLinks />
+    // 			</div>
+    // 		</div>
+    // 		<div className="flex flex-col-reverse justify-center gap-3 pt-3 md:flex-row md:justify-between">
+    // 			<LegalText />
+    // 			<LegalLinks />
+    // 		</div>
+    // 	</nav>
+    // 	<div className="mt-4 flex justify-center border-t border-solid border-gray-45 pt-5 text-hero-dark md:hidden md:self-start">
+    // 		<MystenLabsRed />
+    // 	</div>
+    // </footer>
+  );
 }
 
 export default Footer;

@@ -11,6 +11,7 @@ import { useNetworkContext } from "~/context";
 import { Banner } from "~/ui/Banner";
 import { Network } from "~/utils/api/DefaultRpcClient";
 import Header from "../header/Header";
+import Footer from "../footer/Footer";
 
 export type PageLayoutProps = {
   gradient?: {
@@ -113,7 +114,7 @@ export function PageLayout({
           </section>
         )}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
