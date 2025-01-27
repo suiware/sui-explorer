@@ -49,7 +49,7 @@ npx pm2 logs sui-explorer-local --nostream
 
 ## Usage examples
 
-Sui Explorer Local is integrated into [Sui dApp Starter](https://github.com/suiware/sui-dapp-starter) and [Suibase](https://github.com/ChainMovers/suibase).
+Local Sui Explorer is integrated into [Sui dApp Starter](https://github.com/suiware/sui-dapp-starter) and [Suibase](https://github.com/ChainMovers/suibase).
 
 ## License & copyright
 
