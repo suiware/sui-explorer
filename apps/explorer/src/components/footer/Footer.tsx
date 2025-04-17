@@ -53,7 +53,7 @@ const SuiwareLogoLink = () => {
 
 function Footer() {
   return (
-    <footer className="sticky top-[100%] bg-gray-40 px-2 py-10 md:px-5 md:py-14">
+    <footer className="sticky top-[100%] bg-gray-40 px-2 py-10 md:px-5 md:py-6 print:hidden">
       <nav className="flex flex-col justify-center gap-4 divide-y divide-solid divide-gray-45 md:gap-7.5">
         <div className="flex flex-col-reverse items-center gap-7.5 md:flex-row md:justify-between ">
           <div className="hidden self-center text-hero-dark md:flex">

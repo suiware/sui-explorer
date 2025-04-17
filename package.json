@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "pnpm --filter explorer build",
-    "serve": "pnpm --filter explorer serve"
+    "serve": "pnpm --filter explorer serve",
+    "start": "pnpm build && pnpm serve"
   },
   "keywords": [
     "cli",

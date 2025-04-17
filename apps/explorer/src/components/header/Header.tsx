@@ -23,7 +23,7 @@ function Header() {
   return (
     <header
       className={clsx(
-        "flex h-header justify-center overflow-visible bg-white/40 backdrop-blur-xl transition-shadow",
+        "flex h-header justify-center overflow-visible bg-white/40 backdrop-blur-xl transition-shadow print:hidden",
         isScrolled && "shadow-effect-ui-regular"
       )}
     >
